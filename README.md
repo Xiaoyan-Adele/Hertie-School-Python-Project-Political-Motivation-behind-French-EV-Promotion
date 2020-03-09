@@ -8,7 +8,7 @@ Lane’s framework of analysis provided useful guidelines, but it has been seven
 1. to design a more efficient way of collecting text data from the open web by using Python web scrapping technique;
 2. classify the scrapped text depending on their topic relevance with the Python language. 
 
-(Though the course syllabus demands this project to be completed with a team, the physical isolation of the author due to Coronavirus outbreak in Wuhan make it a solo project) 
+Though the course syllabus demands this project to be completed with a team, the physical isolation of the author due to Coronavirus outbreak in Wuhan make it a solo project
 
 ## This repo functions as a dairy of the author's learning process:
 * folder "Dataset" collects scrapped data from the web as well as the topic classifiers
