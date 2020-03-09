@@ -1,1 +1,1 @@
-# Hertie-School-Python-Project-Political-Motivation-behind-French-EV-Promotion
+# Political-Motivation-behind-French-EV-Promotion
