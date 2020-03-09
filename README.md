@@ -11,10 +11,13 @@ Lane’s framework of analysis provided useful guidelines, but it has been seven
 (Though the course syllabus demands this project to be completed with a team, the physical isolation of the author due to Coronavirus outbreak in Wuhan make it a solo project) 
 
 ## This repo functions as a dairy of the author's learning process:
-------- folder "Dataset" collects scrapped data from the web as well as the topic classifiers
-------- folder "Codes" contains both the web scrapping code in python and the code for later data analysis. Meanwhile, as part of the course requirement, a seperate description of the code book will also be uploaded in this section. 
-------- folder "literature review" includes all references used in this project and 
-------- folder "reports & feedbacks" combines both final versions of the project proposal, midterm report, and the final report, as well as feedbacks from the course instructors. 
+* folder "Dataset" collects scrapped data from the web as well as the topic classifiers
+
+* folder "Codes" contains both the web scrapping code in python and the code for later data analysis. Meanwhile, as part of the course requirement, a seperate description of the code book will also be uploaded in this section. 
+
+* folder "literature review" includes all references used in this project and 
+
+* folder "reports & feedbacks" combines both final versions of the project proposal, midterm report, and the final report, as well as feedbacks from the course instructors. 
 
 
 From a personal perspective, the value of this exercise extends beyond the very topic of this research. From a personal perspective, it is a revision of some traditional methods acquired last semester using the R language. While reviewing the knowledge from last year, this project will adapt learned models with a new language Python. Secondly, due to the limited data size that this project planned to collect, we will not be able to use much deep learning technique and will turn to rule-based systems. While usually, machine learning gives better results with much less effort involved when we have a considerable corpus size, it does not phase out the value of rule-based systems, especially when we try to simulate experts’ reading of a much smaller sized text in specific domains without an already trained model. This much less sophisticated natural language processing poses an alternative to the more advanced algorithm which will be explored with another team project. 
