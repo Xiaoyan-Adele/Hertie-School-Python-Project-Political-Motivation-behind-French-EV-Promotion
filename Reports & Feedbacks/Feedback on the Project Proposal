@@ -1,6 +1,7 @@
-
+Email exert from the Professor: 
 I have gone over your project proposal and my worry is that it is a very ambitious project for only one person on their own, especially as you are doing a separate project for NLP, so your Python project does not need to have an NLP aspect to it as well. I thought we could discuss scaling it down to something that can be achieved in the given time frame.
 
 My advice is to focus on a part of your project. Screen scraping in Python alone will take a bit of work and collecting and putting together a corpus is easily a very time-consuming task. Is it possible to work with a dataset that already exists? Or to use some fake data that we can use as a test. Keep in mind that this is a programming course and I am only expecting a demonstration of Python skill and not necessarily a research project.
 
+Date: 22/03
 
