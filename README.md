@@ -13,7 +13,7 @@ Due to quarantine, this team project was not able to carried out with other clas
 ## This repo functions as a dairy of the author's learning process:
 * folder "Dataset" collects scrapped data from the web as well as the topic classifiers
 
-* folder "Codes" contains both the web scrapping code in python and the code for later data analysis. Meanwhile, as part of the course requirement, a seperate description of the code book will also be uploaded in this section. 
+* folder "Code" contains both the web scrapping code in python and the code for later data analysis. Meanwhile, as part of the course requirement, a separate description of the codebook will also be uploaded in this section. 
 
 * folder "Literature Review" includes all references used in this project and 
 
