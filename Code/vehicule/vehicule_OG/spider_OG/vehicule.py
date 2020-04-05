@@ -2,10 +2,8 @@ import scrapy
 from scrapy import Request
 from vehicule.items import VehiculeItems 
 
-class VehiculeSpider (scrapy.Spider):
-    
-    name = 'VehiculeSpider'
-    
+class VehiculeSpider(scrapy.Spider): 
+    name ='VehiculeSpider'
     allowed_domains = ["www.gouvernement.fr"]
     start_urls = ['https://www.gouvernement.fr/search/site/vehicules%2520electriques']
     
