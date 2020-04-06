@@ -1,8 +1,10 @@
 
-##Structural Setting:
+# Code Documentation
+
+## Structural Setting:
 We create the starter repo by typing the command: scrapy startproject tutorial in the windows prompt. This helped us to auto generate the right folder structure and necessary files for later calibration.
 
-##Spider code writing:
+## Spider code writing:
 Our spider is set for the website 'https://www.gouvernement.fr/search/site/vehicules%2520electriques'. Here we used the class method to define our spider under the name “VehiculeSpider”. After learning about the basic knowledge of html structure from DataCamp, we copied the route of our targeted content in xpath format by using Firefox in-built developer tools. 
 
 We consulted the instruction from Medium article “A Minimalist End-to-End Scrapy Tutorial (Part I)” to design the code for auto-scrape the next page but did not copy line by line. We were awared that there was a shorter version of this “page-turner” code from the tutorial and we would experiment that after the midterm report submission. 
