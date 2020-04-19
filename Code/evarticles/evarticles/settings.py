@@ -9,10 +9,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'evarticle'
+BOT_NAME = 'evarticles'
 
-SPIDER_MODULES = ['evarticle.spiders']
-NEWSPIDER_MODULE = 'evarticle.spiders'
+SPIDER_MODULES = ['evarticles.spiders']
+NEWSPIDER_MODULE = 'evarticles.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'evarticle.pipelines.EvArticlePipeline': 300,
+    'evarticles.pipelines.EvArticlePipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

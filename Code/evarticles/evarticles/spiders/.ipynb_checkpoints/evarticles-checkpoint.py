@@ -1,6 +1,6 @@
 import scrapy
 from scrapy import Request
-from vehicule.items import VehiculeItems
+from evarticles.items import EvArticleItems
 
 
 class EvArticleSpider(scrapy.Spider):
@@ -12,20 +12,15 @@ class EvArticleSpider(scrapy.Spider):
     def parse(self, response):
         # use xpath to parse elements
         body = response.xpath('//*[@id="block-system-main"]/div/div/ol/li')
-        for sel in body:
-            title = sel.xpath('div[2]/h2/a/text()').extract()[0]
-            link = sel.xpath('div[2]/h2/a/@href').extract()[0]
-            publication = sel.xpath('div[2]/div/text()').extract()[0]
-
-             #get the content of the url link  
-            content_url = sel.xpath('div[2]/h2/a/@href').get()
+        for url in body:
+            #get the content of the url link  
+            content_url = url.xpath('div[2]/h2/a/@href').get()
             self.logger.info('scrape article content')
             yield response.follow(content_url, callback=self.parse_content)
-        
 
         def parse_content(self, response):
             yield {
-                'content':reponse.css('.content::text').get()
+                'content':response.css('.content::text').get()
             }
             
             item = EvArticleItems()
@@ -34,6 +29,7 @@ class EvArticleSpider(scrapy.Spider):
             item['link'] = link
             item['publication'] = publication
             yield item
+            
 
             
         # next page
