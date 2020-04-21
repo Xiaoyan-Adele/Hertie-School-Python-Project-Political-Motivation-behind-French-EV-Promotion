@@ -32,5 +32,3 @@ class VehiculeSpider(scrapy.Spider):
             yield Request(url=next_url)
 
 
-
-

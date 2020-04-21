@@ -11,26 +11,23 @@ class EvArticleSpider(scrapy.Spider):
 
     def parse(self, response):
         # use xpath to parse elements
+
+        def parse_content(response):
+            content = response.xpath('//*[@id="block-system-main"]')
+            content = content.xpath('string(.)').extract()[0]
+            item = EvArticleItems()
+            item['content'] = content
+            item['title'] = ''
+            item['link'] = ''
+            item['publication'] = ''
+            yield item
+        
         body = response.xpath('//*[@id="block-system-main"]/div/div/ol/li')
         for url in body:
             #get the content of the url link  
             content_url = url.xpath('div[2]/h2/a/@href').get()
             self.logger.info('scrape article content')
-            yield response.follow(content_url, callback=self.parse_content)
-
-        def parse_content(self, response):
-            yield {
-                'content':response.css('.content::text').get()
-            }
-            
-            item = EvArticleItems()
-            item['content'] = content
-            item['title'] = title
-            item['link'] = link
-            item['publication'] = publication
-            yield item
-            
-
+            yield response.follow(content_url, callback=parse_content)
             
         # next page
         # //*[@id="block-system-main"]/div/div/div[2]/ul/li[7]/a
