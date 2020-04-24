@@ -13,7 +13,7 @@ class EvArticleSpider(scrapy.Spider):
         # use xpath to parse elements
 
         def parse_content(response):
-            content = response.xpath('//*[@id="block-system-main"]')
+            content = response.xpath('//*[@id="block-system-main"]/div/div')
             content = content.xpath('string(.)').extract()[0]
             item = EvArticleItems()
             item['content'] = content
