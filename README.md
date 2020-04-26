@@ -8,16 +8,12 @@ Lane’s framework of analysis provided useful guidelines, but it has been seven
 1. to design a more efficient way of collecting text data from the open web by using Python web scrapping technique;
 2. classify the scrapped text depending on their topic relevance with the Python language. 
 
-Due to quarantine, this team project was not able to carried out with other classmates. 
+## This repo is created for the team project of the course Python Programming for Data Scientists @Hertie School. It is organized as the following:
+* folder "Dataset" collects two csv files "evsearch.csv" and "evarticle.csv" corresponding to the phased achievement by midterm report and the manuall-processed file for the final report. In the same folder, you can also find the iad_tuning_results prepared for lda model improvement. 
 
-## This repo functions as a dairy of the author's learning process:
-* folder "Dataset" collects scrapped data from the web as well as the topic classifiers
+* folder "Code" contains both the web scrapping code in python and the code for later data analysis. There are two scrapy folder. "vehicule" is the old one contains my initial attempt to crawl the title, teaser and the publication date of the search result from the target website. "evarticles" is the scrapy framework that I created for the final report. I attached also the LDA topic modeling code in this folder. 
 
-* folder "Code" contains both the web scrapping code in python and the code for later data analysis. Meanwhile, as part of the course requirement, a separate description of the codebook will also be uploaded in this section. 
+* folder "Literature Review" includes all references used in this project.
 
-* folder "Literature Review" includes all references used in this project and 
+* folder "Reports & Feedbacks" combines both final versions of the project proposal, midterm report, and the final report, as well as feedbacks from the course instructors, and some screen shots or illustrations that I quoted in the reports drafting 
 
-* folder "Reports & Feedbacks" combines both final versions of the project proposal, midterm report, and the final report, as well as feedbacks from the course instructors. 
-
-
-From a personal perspective, the value of this exercise extends beyond the very topic of this research. From a personal perspective, it is a revision of some traditional methods acquired last semester using the R language. While reviewing the knowledge from last year, this project will adapt learned models with a new language Python. Secondly, due to the limited data size that this project planned to collect, we will not be able to use much deep learning technique and will turn to rule-based systems. While usually, machine learning gives better results with much less effort involved when we have a considerable corpus size, it does not phase out the value of rule-based systems, especially when we try to simulate experts’ reading of a much smaller sized text in specific domains without an already trained model. This much less sophisticated natural language processing poses an alternative to the more advanced algorithm which will be explored with another team project. 
