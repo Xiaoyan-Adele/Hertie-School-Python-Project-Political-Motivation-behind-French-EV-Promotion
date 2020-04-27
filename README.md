@@ -4,7 +4,7 @@ In 2013, Bradley W. Lane and others identified two motivations for why governmen
 
 Lane’s framework of analysis provided useful guidelines, but it has been seven years and two government changes since their research. It is time to apply the theory on more recent policy texts to update our understanding of the intention of this French government on the French EV industry. Instead of repeating the conventional way of generating policy positions, this team project wishes to draw inspiration from computer sciences and explore a more efficient way of collecting and classifying text. By doing so, not only can we collect and process considerably sized corpus with fewer costs but also replace the intuitive understanding of the text to something more measurable, putting subjectivity in a more objective criterion. 
 
-## Therefore, this project firstly wishes
+## Therefore, this project wishes
 1. to design a more efficient way of collecting text data from the open web by using Python web scrapping technique;
 2. classify the scrapped text depending on their topic relevance with the Python language. 
 
